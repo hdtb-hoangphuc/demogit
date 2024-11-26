@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e.css">
+    <title>thêm sản phẩm</title>
+</head>
+
+<body>
+    <style>
+        #addProductForm {
+    background-color: #9daf7b;
+    min-height: 2px;
+    padding: 10px;
+    max-width: 300px;
+    color: #ffffff;
+
+}
+
+.button {
+    padding: 4px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Căn các phần tử cách đều nhau */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-name {
+    flex: 1; /* Cho phép phần tử này chiếm hết không gian còn lại */
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    background-color: darkorchid;
+  }
+  .products {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Căn các phần tử cách đều nhau */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgb(119, 114, 114);
+  }
+  #container{
+    margin: 0px;
+    padding: 1px auto;
+    border: 2px solid #000000;
+    
+  }
+    </style>
+    <div id="container">
+    <h2>Add New Product</h2>
+    <div id="addProductForm">
+        <form id="addProductForm">
+            <input type="text" id="productName" placeholder="Nhập tên sản phẩm">
+            <button type="button" onclick="addProduct()" class="button">Add</button>
+        </form>
+    </div>
+    <h2>Display All Product</h2>
+    <div style="width: 100%">
+        <div style="float: left; width: 50%;">
+            <h3>Product</h3>
+        </div>
+        <div style="float: right; width: 50%;">
+            <h3>9 Products</h3>
+        </div>
+    </div>
+    <div class="product" style="width: 70%;">
+        <span style="float: left; width: 10%;">Sony Xperia</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="products" style="width: 70%;">
+        <span style="float: left; width: 10%;">Samsung Galaxy</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="product" style="width: 70%;">
+        <span style="float: left; width: 10%;">Nokia 6</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="products" style="width: 70%;">
+        <span style="float: left; width: 10%;">Xiaomi Redmi Note 4</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="product" style="width: 70%;">
+        <span style="float: left; width: 10%;">Apple iPhone 6S</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="products" style="width: 70%;">
+        <span style="float: left; width: 10%;">Xiaomi Mi 5s Plus</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="product" style="width: 70%;">
+        <span style="float: left; width: 10%;">Apple iPhone 8 Plus</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="products" style="width: 70%;">
+        <span style="float: left; width: 10%;">Fujitsu F-04E</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+    <div class="product" style="width: 70%;">
+        <span style="float: left; width: 10%;">Oppo A71</span>
+        <button class="edit-btn" style="float: center; width: 10%; ">Edit</button>
+        <button class="delete-btn" style="float: left; width: 10%; ">Delete</button>
+    </div>
+</div>
+</body>
+
+</html>
