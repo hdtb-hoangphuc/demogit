@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tính tiền bán hàng</title>
+</head>
+
+<body>
+    <style>
+        .checkbox-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .background-1 {
+            background-color: rgb(86, 86, 90);
+        }
+
+        .background-0 {
+            background-color: rgb(163, 163, 167);
+        }
+
+        .background-2 {
+            background-color: rgb(235, 199, 253);
+        }
+    </style>
+    <form action="">
+        <table border="1" cellspacing="3" cellpadding="6">
+            <thead>
+                <tr class="background-0">
+                    <th style="width: 5%;">STT</th>
+                    <th style="width: 21%;">Tên hàng hóa</th>
+                    <th style="width: 21%;">Số lượng có</th>
+                    <th style="width: 21%;">Số lượng mua</th>
+                    <th style="width: 21%;">Đơn giá</th>
+                    <th style="width: 11%;">Chọn mua</th>
+                </tr>
+            </thead>
+
+            <body>
+                <tr>
+                    <td class="background-0">1</td>
+                    <td class="background-0">CPU</td>
+                    <td class="background-2">
+                        <form action="">
+                            <input type="text" value="14" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="number" min="0" max="14" style="width: 95%;" placeholder="0">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="text" value="120$" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-1">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="myCheckbox">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="background-0">2</td>
+                    <td class="background-0">HDD</td>
+                    <td class="background-2">
+                        <form action="">
+                            <input type="text" value="14" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="number" min="0" max="14" style="width: 95%;" placeholder="0">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="text" value="10$" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-1">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="myCheckbox">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="background-0">3</td>
+                    <td class="background-0">RAM</td>
+                    <td class="background-2">
+                        <form action="">
+                            <input type="text" value="12" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="number" min="0" max="12" style="width: 95%;" placeholder="0">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="text" value="29$" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-1">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="myCheckbox">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="background-0">4</td>
+                    <td class="background-0">ROM</td>
+                    <td class="background-2">
+                        <form action="">
+                            <input type="text" value="23" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="number" min="0" max="23" style="width: 95%;" placeholder="0">
+                        </form>
+                    </td>
+                    <td class="background-2 ">
+                        <form action="">
+                            <input type="text" value="130$" style="width: 95%;">
+                        </form>
+                    </td>
+                    <td class="background-1">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="myCheckbox">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="background-2 ">
+                    <td colspan="2">
+                        <form action="">
+                            <input type="submit" value="Nhập lại">
+                        </form>
+                    </td>
+                    
+                    <td>
+                        <form action="">
+                            <input type="submit" value="OK">
+                        </form>
+                    </td>
+                    <td colspan="2">
+                        <form action="">
+                            <label for="">Tổng cộng: </label>
+                            <input type="text" value="0" >
+                        </form>
+                    </td>
+                    <td >
+                        <form action="">
+                            <input type="checkbox"> VAT
+                        </form>
+                    </td>
+                </tr>
+            </body>
+        </table>
+    </form>
+</body>
+
+</html>
